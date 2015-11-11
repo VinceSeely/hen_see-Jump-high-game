@@ -9,12 +9,12 @@ package henSeeJumpHigh;
  *
  * @author vince
  */
-public class MainFrame extends java.awt.Frame {
+public class GameFrame extends java.awt.Frame {
 
    /**
-    * Creates new form MainFrame
+    * Creates new form GameFrame
     */
-   public MainFrame() {
+   public GameFrame() {
       initComponents();
    }
 
@@ -26,9 +26,6 @@ public class MainFrame extends java.awt.Frame {
    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
    private void initComponents() {
 
-      setMaximumSize(new java.awt.Dimension(700, 700));
-      setMinimumSize(new java.awt.Dimension(700, 700));
-      setPreferredSize(new java.awt.Dimension(700, 700));
       addWindowListener(new java.awt.event.WindowAdapter() {
          public void windowClosing(java.awt.event.WindowEvent evt) {
             exitForm(evt);
@@ -51,7 +48,7 @@ public class MainFrame extends java.awt.Frame {
    public static void main(String args[]) {
       java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {
-            new MainFrame().setVisible(true);
+            new GameFrame().setVisible(true);
          }
       });
    }
