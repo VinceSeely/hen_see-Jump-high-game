@@ -28,6 +28,7 @@ public class MainFrame extends java.awt.Frame {
 
       setMaximumSize(new java.awt.Dimension(700, 700));
       setMinimumSize(new java.awt.Dimension(700, 700));
+      setPreferredSize(new java.awt.Dimension(700, 700));
       addWindowListener(new java.awt.event.WindowAdapter() {
          public void windowClosing(java.awt.event.WindowEvent evt) {
             exitForm(evt);
