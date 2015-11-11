@@ -7,6 +7,9 @@
 // You don't have to finish any code in this file - just comment it well!
 // Be sure to remove and/or rewrite my comments!
 
+
+package henSeeJumpHigh;
+
 import java.awt.*;
 
 public abstract class PFigure implements Comparable
