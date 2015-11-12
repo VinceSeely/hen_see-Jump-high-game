@@ -5,6 +5,8 @@
  */
 package henSeeJumpHigh;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.Timer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,14 +15,31 @@ import java.util.logging.Logger;
  *
  * @author vince
  */
-public class GameFrame2 extends javax.swing.JFrame {
-
+public class GameFrame2 extends javax.swing.JFrame implements java.awt.event.ActionListener
+{
+   private final Timer gameTimer = new Timer(500, this);
    private int level = 1;
+   public static BlockFun spawner[] = new BlockFun[5];
+   
+   private UWPEnemy temp;
+   private PioneerPeteEnemy temp1;
    /**
     * Creates new form GameFrame2
     */
-   public GameFrame2() {
+   public GameFrame2() 
+   {
       initComponents();
+      setSize(550,450);
+      for(int i = 0; i < spawner.length; i++)
+         spawner[i] = new BlockFun(((int)(Math.random() * 500) + 10),
+            ((int)(Math.random() * 500) + 10),gamePanel);
+      
+      temp = new UWPEnemy(((int)(Math.random() * 500) + 10),
+            ((int)(Math.random() * 500) + 10),gamePanel);
+      temp1 = new PioneerPeteEnemy(((int)(Math.random() * 500) + 10),
+            ((int)(Math.random() * 500) + 10),gamePanel);
+      gameTimer.start();
+      gamePanel.requestFocus();
    }
 
    /**
@@ -41,7 +60,6 @@ public class GameFrame2 extends javax.swing.JFrame {
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setMaximumSize(new java.awt.Dimension(700, 700));
       setMinimumSize(new java.awt.Dimension(700, 700));
-      setPreferredSize(new java.awt.Dimension(700, 700));
 
       gamePanel.setBackground(new java.awt.Color(51, 204, 255));
       gamePanel.setMaximumSize(new java.awt.Dimension(700, 700));
@@ -113,16 +131,27 @@ public class GameFrame2 extends javax.swing.JFrame {
       startButton.setVisible(false);
       jLabel1.setVisible(false);
       displayLevel();
-      
       jLabel2.setVisible(false);
-      UWPEnemy temp = new UWPEnemy(gamePanel);
-      temp.draw();
    }//GEN-LAST:event_startButtonActionPerformed
 
    private void displayLevel()
    {
       jLabel2.setText("Welcome to level " + level);
       level++;
+   }
+   
+   @Override
+   public void actionPerformed(ActionEvent e)
+   {
+      for(int i = 0; i < spawner.length; i++)
+         spawner[i].draw();
+      temp.hide();
+      temp.move();
+      temp.draw();
+      temp1.hide();
+      temp1.move();
+      temp1.draw();
+      
    }
    /**
     * @param args the command line arguments

@@ -21,9 +21,9 @@ public class UWPEnemy extends PFigure
    private int yVel = 20;
    private Image img;
 
-   public UWPEnemy(JPanel p)
+   public UWPEnemy(int startX, int startY, JPanel p)
    {
-      super(50, 50, 110, 78, 1, p);
+      super(startX, startY, 50, 50, 1, p);
        try
        {
           File file = new File("UWPLogo.jpg");
