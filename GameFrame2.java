@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 public class GameFrame2 extends javax.swing.JFrame {
 
    private int level = 1;
+   private Object[] enemies;
    /**
     * Creates new form GameFrame2
     */
@@ -119,6 +120,10 @@ public class GameFrame2 extends javax.swing.JFrame {
       jLabel2.setText("Welcome to level " + level);
       level++;
    }
+   private void initializeEnemies()
+   {
+      enemies
+   }
    /**
     * @param args the command line arguments
     */
@@ -145,7 +150,8 @@ public class GameFrame2 extends javax.swing.JFrame {
          java.util.logging.Logger.getLogger(GameFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
       }
         //</editor-fold>
-
+      
+      intializeEnemies();
       /* Create and display the form */
       java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {
