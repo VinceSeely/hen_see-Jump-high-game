@@ -5,16 +5,21 @@
  */
 package henSeeJumpHigh;
 
+<<<<<<< HEAD
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.JPanel;
 import java.io.File;
 import javax.imageio.ImageIO;
+=======
+import java.awt.Panel;
+>>>>>>> origin/master
 
 /**
  *
  * @author vince
  */
+<<<<<<< HEAD
 public class UWPEnemy extends PFigure 
 {
    private int xVel = 20;
@@ -57,4 +62,19 @@ public class UWPEnemy extends PFigure
       }
    }
 
+=======
+public class UWPEnemy extends PFigure
+{
+   
+   public UWPEnemy(int startX, int startY, int pr, Panel p)
+   {
+      super(startX, startY, 20, 20, pr, p);
+   }
+   
+   @Override
+   public void draw() {
+      throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   }
+   
+>>>>>>> origin/master
 }
