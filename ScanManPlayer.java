@@ -9,6 +9,8 @@ package henSeeJumpHigh;
  *
  * @author vince
  */
-public class ScanManPlayer {
-   
+public class ScanManPlayer 
+{
+   private int lives = 3;
+   public final int[] startLocation = {400,700}; //starting point for the player
 }

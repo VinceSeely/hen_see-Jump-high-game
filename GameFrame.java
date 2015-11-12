@@ -14,7 +14,8 @@ public class GameFrame extends java.awt.Frame {
    /**
     * Creates new form GameFrame
     */
-   public GameFrame() {
+   public GameFrame() 
+   {
       initComponents();
    }
 
@@ -26,6 +27,9 @@ public class GameFrame extends java.awt.Frame {
    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
    private void initComponents() {
 
+      panel1 = new java.awt.Panel();
+      button1 = new java.awt.Button();
+
       setMaximumSize(new java.awt.Dimension(700, 700));
       setMinimumSize(new java.awt.Dimension(700, 700));
       setPreferredSize(new java.awt.Dimension(700, 700));
@@ -34,6 +38,17 @@ public class GameFrame extends java.awt.Frame {
             exitForm(evt);
          }
       });
+
+      panel1.setBackground(new java.awt.Color(102, 204, 255));
+      panel1.setMaximumSize(new java.awt.Dimension(700, 700));
+      panel1.setMinimumSize(new java.awt.Dimension(700, 700));
+      panel1.setPreferredSize(new java.awt.Dimension(700, 700));
+      panel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 700, 5));
+
+      button1.setLabel("button1");
+      panel1.add(button1);
+
+      add(panel1, java.awt.BorderLayout.CENTER);
 
       pack();
    }// </editor-fold>//GEN-END:initComponents
@@ -48,7 +63,8 @@ public class GameFrame extends java.awt.Frame {
    /**
     * @param args the command line arguments
     */
-   public static void main(String args[]) {
+   public static void main(String args[]) 
+   {
       java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {
             new GameFrame().setVisible(true);
@@ -58,5 +74,7 @@ public class GameFrame extends java.awt.Frame {
 
 
    // Variables declaration - do not modify//GEN-BEGIN:variables
+   private java.awt.Button button1;
+   private java.awt.Panel panel1;
    // End of variables declaration//GEN-END:variables
 }
