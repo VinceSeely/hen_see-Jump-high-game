@@ -5,10 +5,22 @@
  */
 package henSeeJumpHigh;
 
+
+import javax.swing.JPanel;
+
 /**
  *
  * @author vince
  */
-public class Enemy {
+public class Enemy extends PFigure
+{
+   public Enemy(int startX, int startY, int pr, JPanel p)
+   {
+      super(startX, startY, 20, 20, pr, p);
+   }
+   @Override
+   public void draw() {
+      throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+   }
    
 }
