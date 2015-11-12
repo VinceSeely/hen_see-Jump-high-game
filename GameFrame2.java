@@ -30,10 +30,11 @@ public class GameFrame2 extends javax.swing.JFrame {
     */
    @SuppressWarnings("unchecked")
    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-   private void initComponents() {
+   private void initComponents()
+   {
 
-      jPanel1 = new javax.swing.JPanel();
-      jButton1 = new javax.swing.JButton();
+      gamePanel = new javax.swing.JPanel();
+      startButton = new javax.swing.JButton();
       jLabel1 = new javax.swing.JLabel();
       jLabel2 = new javax.swing.JLabel();
 
@@ -42,17 +43,19 @@ public class GameFrame2 extends javax.swing.JFrame {
       setMinimumSize(new java.awt.Dimension(700, 700));
       setPreferredSize(new java.awt.Dimension(700, 700));
 
-      jPanel1.setBackground(new java.awt.Color(51, 204, 255));
-      jPanel1.setMaximumSize(new java.awt.Dimension(700, 700));
-      jPanel1.setMinimumSize(new java.awt.Dimension(700, 700));
+      gamePanel.setBackground(new java.awt.Color(51, 204, 255));
+      gamePanel.setMaximumSize(new java.awt.Dimension(700, 700));
+      gamePanel.setMinimumSize(new java.awt.Dimension(700, 700));
 
-      jButton1.setBackground(new java.awt.Color(255, 204, 51));
-      jButton1.setText("Start");
-      jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-      jButton1.setMinimumSize(new java.awt.Dimension(0, 0));
-      jButton1.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            jButton1ActionPerformed(evt);
+      startButton.setBackground(new java.awt.Color(255, 204, 51));
+      startButton.setText("Start");
+      startButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+      startButton.setMinimumSize(new java.awt.Dimension(0, 0));
+      startButton.addActionListener(new java.awt.event.ActionListener()
+      {
+         public void actionPerformed(java.awt.event.ActionEvent evt)
+         {
+            startButtonActionPerformed(evt);
          }
       });
 
@@ -60,33 +63,33 @@ public class GameFrame2 extends javax.swing.JFrame {
 
       jLabel2.setText("ScanMan Jump 1");
 
-      javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-      jPanel1.setLayout(jPanel1Layout);
-      jPanel1Layout.setHorizontalGroup(
-         jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(jPanel1Layout.createSequentialGroup()
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-               .addGroup(jPanel1Layout.createSequentialGroup()
+      javax.swing.GroupLayout gamePanelLayout = new javax.swing.GroupLayout(gamePanel);
+      gamePanel.setLayout(gamePanelLayout);
+      gamePanelLayout.setHorizontalGroup(
+         gamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(gamePanelLayout.createSequentialGroup()
+            .addGroup(gamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addGroup(gamePanelLayout.createSequentialGroup()
                   .addGap(287, 287, 287)
-                  .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                     .addGroup(jPanel1Layout.createSequentialGroup()
+                  .addGroup(gamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                     .addGroup(gamePanelLayout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
                      .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-               .addGroup(jPanel1Layout.createSequentialGroup()
+               .addGroup(gamePanelLayout.createSequentialGroup()
                   .addGap(299, 299, 299)
                   .addComponent(jLabel1)))
-            .addContainerGap(316, Short.MAX_VALUE))
+            .addContainerGap(296, Short.MAX_VALUE))
       );
-      jPanel1Layout.setVerticalGroup(
-         jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(jPanel1Layout.createSequentialGroup()
+      gamePanelLayout.setVerticalGroup(
+         gamePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(gamePanelLayout.createSequentialGroup()
             .addGap(271, 271, 271)
             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(startButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addContainerGap(334, Short.MAX_VALUE))
       );
 
@@ -94,25 +97,27 @@ public class GameFrame2 extends javax.swing.JFrame {
       getContentPane().setLayout(layout);
       layout.setHorizontalGroup(
          layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+         .addComponent(gamePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
       );
       layout.setVerticalGroup(
          layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+         .addComponent(gamePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
       );
 
       pack();
    }// </editor-fold>//GEN-END:initComponents
 
-   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+   private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
       // TODO add your handling code here:
-      jButton1.setSize(0,0);
-      jButton1.setVisible(false);
+      startButton.setSize(0,0);
+      startButton.setVisible(false);
       jLabel1.setVisible(false);
       displayLevel();
       
       jLabel2.setVisible(false);
-   }//GEN-LAST:event_jButton1ActionPerformed
+      UWPEnemy temp = new UWPEnemy(gamePanel);
+      temp.draw();
+   }//GEN-LAST:event_startButtonActionPerformed
 
    private void displayLevel()
    {
@@ -155,9 +160,9 @@ public class GameFrame2 extends javax.swing.JFrame {
    }
 
    // Variables declaration - do not modify//GEN-BEGIN:variables
-   private javax.swing.JButton jButton1;
+   private javax.swing.JPanel gamePanel;
    private javax.swing.JLabel jLabel1;
    private javax.swing.JLabel jLabel2;
-   private javax.swing.JPanel jPanel1;
+   private javax.swing.JButton startButton;
    // End of variables declaration//GEN-END:variables
 }

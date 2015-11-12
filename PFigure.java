@@ -10,17 +10,19 @@
 
 package henSeeJumpHigh;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.*;
 
 public abstract class PFigure implements Comparable
 {
    protected int x, y;           // Current position of the figure
    protected int width, height;  // Drawn (displayed) this size
    protected int priority;       // Can use to determine "winner"
-   protected Panel panel;        // Panel the figure lives on
+   protected JPanel panel;        // Panel the figure lives on
 
    public PFigure ( int startX, int startY, int _width, int _height, 
-                    int pr, Panel p )
+                    int pr, JPanel p )
    {
        x = startX;
        y = startY;
