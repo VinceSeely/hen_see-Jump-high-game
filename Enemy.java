@@ -9,8 +9,6 @@ package henSeeJumpHigh;
  *
  * @author vince
  */
-public abstract class Enemy extends PFigure
-{
-   
+public class Enemy {
    
 }
