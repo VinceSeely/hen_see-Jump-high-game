@@ -19,14 +19,10 @@ public class GameFrame2 extends javax.swing.JFrame implements java.awt.event.Act
 {
    private final Timer gameTimer = new Timer(500, this);
    private int level = 1;
-<<<<<<< HEAD
    public static BlockFun spawner[] = new BlockFun[5];
-   
    private UWPEnemy temp;
    private PioneerPeteEnemy temp1;
-=======
-   private Object[] enemies;
->>>>>>> origin/master
+   private PFigure[] enemies;
    /**
     * Creates new form GameFrame2
     */
@@ -143,7 +139,7 @@ public class GameFrame2 extends javax.swing.JFrame implements java.awt.event.Act
       jLabel2.setText("Welcome to level " + level);
       level++;
    }
-<<<<<<< HEAD
+
    
    @Override
    public void actionPerformed(ActionEvent e)
@@ -157,11 +153,6 @@ public class GameFrame2 extends javax.swing.JFrame implements java.awt.event.Act
       temp1.move();
       temp1.draw();
       
-=======
-   private void initializeEnemies()
-   {
-      enemies
->>>>>>> origin/master
    }
    /**
     * @param args the command line arguments
@@ -190,7 +181,7 @@ public class GameFrame2 extends javax.swing.JFrame implements java.awt.event.Act
       }
         //</editor-fold>
       
-      intializeEnemies();
+      //intializeEnemies();
       /* Create and display the form */
       java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {

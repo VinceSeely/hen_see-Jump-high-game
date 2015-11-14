@@ -5,15 +5,12 @@
  */
 package henSeeJumpHigh;
 
-<<<<<<< HEAD
 import java.awt.Graphics;
 import java.awt.Image;
 import java.io.File;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
-=======
-import java.awt.Panel;
->>>>>>> origin/master
+
 
 /**
  *
@@ -21,7 +18,6 @@ import java.awt.Panel;
  */
 public class PioneerPeteEnemy extends PFigure
 {
-<<<<<<< HEAD
    private int xVel = ((int)(Math.random() * 100)) - 50;
    private int yVel = ((int)(Math.random() * 100)) - 50;
    
@@ -69,17 +65,6 @@ public class PioneerPeteEnemy extends PFigure
          Graphics g = panel.getGraphics();
          g.drawImage( img, x, y, width, height, null );
       }
-=======
-   
-   public PioneerPeteEnemy(int startX, int startY, int pr, Panel p)
-   {
-      super(startX, startY, 20, 20, pr, p);
-   }
-
-   @Override
-   public void draw() {
-      throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
->>>>>>> origin/master
    }
    
 }
